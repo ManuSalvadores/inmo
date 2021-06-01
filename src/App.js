@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from './components/navbar/navbar';
-import Grid from './components/grid/grid';
+import Home from './pages/home/home';
+import Contact from './pages/contact/contact';
+import Property from './pages/property/property'
 
 import {
   BrowserRouter as Router,
   Switch,
-  useParams,
   Route,
-  Link
 } from "react-router-dom";
 
 export default function App() {
@@ -16,14 +16,14 @@ export default function App() {
       <div>
         <Navbar />
         <Switch>
-          <Route path="/about">
-            <About />
+          <Route path="/contact">
+            <Contact />
           </Route>
-          <Route path="/users">
-            <Users />
+          <Route exact path="/property/:id">
+            <Property />
           </Route>
-          <Route exact path="/view/:id">
-            <View />
+          <Route path="/home">
+            <Home />
           </Route>
           <Route path="/">
             <Home />
@@ -32,29 +32,4 @@ export default function App() {
       </div>
     </Router>
   );
-}
-
-function Home() {
-  return (
-    <>
-      <Grid />
-    </>
-  )
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function View() {
-  const { id } = useParams();
-  return (
-    <>
-    <h2>{id}</h2>
-    </>
-  );
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }

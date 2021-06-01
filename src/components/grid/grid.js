@@ -31,7 +31,12 @@ export default function CenteredGrid() {
           <Paper className={classes.paper}>xs=6</Paper>
         </Grid>
         <Grid item xs={6} lg={3} md={4}>
-          <Card />
+          <Card 
+          img="https://static01.nyt.com/images/2020/12/24/obituaries/Menem-05a-esp-1/Menem-05a-superJumbo.jpg" 
+          tittle="el rey de reyes" 
+          description="unico e inigualable"
+          price={332}
+           />
         </Grid>
         <Grid item xs={6} lg={3} md={4}>
           <Card />
