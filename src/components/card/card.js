@@ -8,6 +8,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import PropTypes from "prop-types";
+import Icon from "../icon/icon";
 
 const useStyles = makeStyles({
   root: {
@@ -36,12 +37,7 @@ function MediaCard({ img, tittle, description, price }) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
+        <Icon />
       </CardActions>
     </Card>
   );
