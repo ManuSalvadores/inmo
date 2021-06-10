@@ -2,6 +2,20 @@ import styled from "styled-components";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+
+export const ToolbarStyled = styled(Toolbar)`
+  display: flex;
+  justify-content: space-between;
+
+  @media(max-width: 600px){
+    flex-direction: column;
+}
+`;
+
+export const SocialMediaAndlinks = styled.div`
+  display: flex;
+`;
 
 export const Li = styled(Button)`
 color: white;
