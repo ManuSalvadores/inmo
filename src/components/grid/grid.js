@@ -21,15 +21,6 @@ export default function CenteredGrid() {
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}>xs=12</Paper>
-        </Grid>
-        <Grid item xs={6}>
-          <Paper className={classes.paper}>xs=6</Paper>
-        </Grid>
-        <Grid item xs={6}>
-          <Paper className={classes.paper}>xs=6</Paper>
-        </Grid>
         <Grid item xs={6} lg={3} md={4}>
           <Card 
           img="https://static01.nyt.com/images/2020/12/24/obituaries/Menem-05a-esp-1/Menem-05a-superJumbo.jpg" 
