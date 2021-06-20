@@ -26,12 +26,12 @@ function MediaCard({ img, tittle, description, price }) {
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        <CardMedia className={classes.media} image={img} title={tittle} />
+        <CardMedia className={classes.media} image={img} title={tittle} data-testid='img' />
         <CardContent>
-          <Typography gutterBottom variant="h6" component="p">
+          <Typography gutterBottom variant="h6" component="p" data-testid='price'>
             ${price}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2" color="textSecondary" component="p" data-testid='description'>
             {description}
           </Typography>
         </CardContent>

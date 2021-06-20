@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card component match snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiCard-root makeStyles-root-1 MuiPaper-elevation1 MuiPaper-rounded"
+  >
+    <button
+      class="MuiButtonBase-root MuiCardActionArea-root"
+      tabindex="0"
+      type="button"
+    >
+      <div
+        class="MuiCardMedia-root makeStyles-media-2"
+        data-testid="img"
+        style="background-image: url(asd.jpg);"
+        title="title"
+      />
+      <div
+        class="MuiCardContent-root"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+          data-testid="price"
+        >
+          $
+          120
+        </p>
+        <p
+          class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+          data-testid="description"
+        >
+          description
+        </p>
+      </div>
+      <span
+        class="MuiCardActionArea-focusHighlight"
+      />
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <div
+      class="MuiCardActions-root MuiCardActions-spacing"
+    >
+      <img
+        src="bedIcon.png"
+      />
+    </div>
+  </div>
+</div>
+`;
